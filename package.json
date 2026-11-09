@@ -1,0 +1,28 @@
+{
+  "name": "dsh-quick-menu",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Adds one caption dropdown (\u4fee\u590d / \u6253\u5f00\u7f51\u9875GUI / \u91cd\u542f DeepSeek) to the left of the Windows caption menus.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "client/client.js",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
